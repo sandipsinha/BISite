@@ -1,0 +1,12 @@
+{% extends "prim.html" %}
+{% import "helpers/forms.html" as forms %}
+{% block mainstuff %}
+<div id='main'>
+    <h1>CONFIGURATION DATAS</h1>
+<!-- ... snip ... -->
+<form action="{{url_for('config')}}" method="POST">
+{{ forms.render(form) }}
+<p><input type="Submit" value="Submit"></p>
+</form>
+</div>
+{% endblock %}
